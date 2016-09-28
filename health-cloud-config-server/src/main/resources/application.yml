@@ -1,0 +1,13 @@
+server:
+  port: 7000
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          search-paths: cloud-config-repo
+          uri: https://github.com/yanxingkui/cloud-config-repo.git
+          username: mengdiege@126.com
+          password: yxk88866
+application:
+  name: health-cloud-config-server
