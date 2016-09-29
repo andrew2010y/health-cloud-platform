@@ -1,0 +1,16 @@
+#  velocity:
+#    resourceLoaderPath: /WEB-INF/templates
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp  
+
+logging:
+  level:
+    root: INFO
+    
+#mybatis:   
+#  mapperLocations: classpath*:com/banma/dao/mapper/**/*.xml  
+#  typeAliasesPackage: com.banma.common.entity
+
+  
