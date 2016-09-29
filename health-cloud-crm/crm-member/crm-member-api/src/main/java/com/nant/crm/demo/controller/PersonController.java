@@ -1,4 +1,4 @@
-package com.nant.crm.demo.web;
+package com.nant.crm.demo.controller;
 
 
 import org.springframework.web.bind.annotation.RestController;

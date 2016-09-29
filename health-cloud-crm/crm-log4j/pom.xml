@@ -16,7 +16,7 @@
 
 	<groupId>crm.log4j</groupId>
 	<artifactId>crm-log4j</artifactId>
-	<version>1.0.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>cloud-simple-log4j</name>
   
@@ -56,27 +56,9 @@
 			<updatePolicy>never</updatePolicy> 
 		</releases> 
 		</pluginRepository>
-		<!-- <pluginRepository>
-			<id>public</id>
-			<name>Public Repositories</name>
-			<url>http://10.0.12.207:8081/nexus/content/groups/public/</url>
-		</pluginRepository> -->
 	</pluginRepositories>
 
 	<dependencies>
-	
-	<!-- <dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
-		<version>1.4.0.RELEASE</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-		<scope>test</scope>
-		<version>1.4.0.RELEASE</version>
-	</dependency> -->
-	
 		<!--web应用基本环境配置 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

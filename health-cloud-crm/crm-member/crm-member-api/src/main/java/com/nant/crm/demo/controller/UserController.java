@@ -5,7 +5,7 @@
  * Git http://git.oschina.net/zhou666/spring-cloud-7simple
  */
 
-package com.nant.crm.demo.web;
+package com.nant.crm.demo.controller;
 
 import java.util.List;
 
