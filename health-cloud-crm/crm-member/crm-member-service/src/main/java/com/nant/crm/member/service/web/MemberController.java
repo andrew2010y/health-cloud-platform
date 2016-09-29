@@ -1,4 +1,4 @@
-package com.nant.crm.demo.service.web;
+package com.nant.crm.member.service.web;
 
 import java.util.List;
 
@@ -7,18 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nant.crm.demo.service.domain.UserService;
-import com.nant.crm.demo.model.User;
+import com.nant.crm.member.model.Member;
+import com.nant.crm.member.service.domain.MemberService;
 
 @RestController
-public class UserController {
+public class MemberController {
 
 	@Autowired
-	UserService userService;
+	MemberService memberService;
 	
 	@RequestMapping(value="/user",method=RequestMethod.GET)
-	public List<User> readUserInfo(){
-		List<User> ls=userService.searchAll();		
+	public List<Member> readUserInfo(){
+		List<Member> ls = memberService.searchAll();		
+		
 		return ls;
 	}
 }

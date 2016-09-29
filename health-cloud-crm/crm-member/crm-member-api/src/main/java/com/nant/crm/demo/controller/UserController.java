@@ -15,8 +15,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nant.crm.demo.model.User;
 import com.nant.crm.demo.service.UserService;
+import com.nant.crm.member.model.User;
 
 
 

@@ -17,7 +17,8 @@ import org.springframework.web.client.RestTemplate;
 //import cloud.simple.service.UserServiceProvider.FeignUserService;
 
 
-import com.nant.crm.demo.model.User;
+
+import com.nant.crm.member.model.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @Service
