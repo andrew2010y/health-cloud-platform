@@ -15,7 +15,11 @@
   <url>http://maven.apache.org</url>
   <packaging>pom</packaging>
   
-  <dependencyManagement>
+  <modules>
+    <module>crm-member</module>
+  </modules>
+  
+<!--   <dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -69,12 +73,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
-  <modules>
-    <module>crm-member</module>
-  </modules>
-  
-  <build>
+    <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -82,6 +81,6 @@
 			</plugin>
 		</plugins>
 		<defaultGoal>compile</defaultGoal>
-  </build>
+  </build> -->
   
 </project>
