@@ -4,22 +4,18 @@
  * @author lzhoumail@126.com/zhouli
  * Git http://git.oschina.net/zhou666/spring-cloud-7simple
  */
-package com.nant.crm.demo.service;
+package com.nant.crm.member.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-//import cloud.simple.service.UserServiceProvider.FeignUserService;
-
-
-
-import com.nant.crm.member.model.User;
+import com.nant.crm.member.model.Member;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+//import cloud.simple.service.UserServiceProvider.FeignUserService;
 
 @Service
 public class UserService {
@@ -32,14 +28,14 @@ public class UserService {
 	 final String SERVICE_NAME="crm-member-service";
 	 
 	 @HystrixCommand(fallbackMethod = "fallbackSearchAll")
-	 public List<User> readUserInfo() {
+	 public List<Member> readUserInfo() {
 	        return restTemplate.getForObject("http://"+SERVICE_NAME+"/user", List.class);
 		 //return feignUserService.readUserInfo();
 	 }	 
-	 private List<User> fallbackSearchAll() {
+	 private List<Member> fallbackSearchAll() {
 		 System.out.println("HystrixCommand fallbackMethod handle!");
-		 List<User> ls = new ArrayList<User>();
-		 User user = new User();
+		 List<Member> ls = new ArrayList<Member>();
+		 Member user = new Member();
 		 user.setUsername("TestHystrixCommand");
 		 ls.add(user);
 		 return ls;

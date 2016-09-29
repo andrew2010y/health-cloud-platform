@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class AOP {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Pointcut("execution(public * com.nant.crm.demo.controller..*.*(..))")
+	@Pointcut("execution(public * com.nant.crm.*.controller..*.*(..))")
 	public void webLog() {}
 
 	@Before("webLog()")

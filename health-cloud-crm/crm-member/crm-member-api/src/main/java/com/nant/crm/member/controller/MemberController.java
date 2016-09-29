@@ -5,7 +5,7 @@
  * Git http://git.oschina.net/zhou666/spring-cloud-7simple
  */
 
-package com.nant.crm.demo.controller;
+package com.nant.crm.member.controller;
 
 import java.util.List;
 
@@ -15,13 +15,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nant.crm.demo.service.UserService;
-import com.nant.crm.member.model.User;
-
-
+import com.nant.crm.member.model.Member;
+import com.nant.crm.member.service.UserService;
 
 @RestController
-public class UserController {
+public class MemberController {
 		
 	@Autowired
 	UserService userService;
@@ -30,8 +28,10 @@ public class UserController {
 	FeignUserService feignUserService;*/
 	
 	@RequestMapping(value="/users")
-	public ResponseEntity<List<User>> readUserInfo(){
-		List<User> users=userService.readUserInfo();		
-		return new ResponseEntity<List<User>>(users,HttpStatus.OK);
+	public ResponseEntity<List<Member>> readUserInfo(){
+		List<Member> users=userService.readUserInfo();		
+		
+		return new ResponseEntity<List<Member>>(users,HttpStatus.OK);
 	}
+	
 }

@@ -1,4 +1,4 @@
-package com.nant.crm.demo.controller;
+package com.nant.crm.member.controller;
 
 public class Person {
 	private Long id;

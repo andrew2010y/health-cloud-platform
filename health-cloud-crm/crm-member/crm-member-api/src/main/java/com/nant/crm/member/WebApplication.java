@@ -1,4 +1,4 @@
-package com.nant.crm.demo;
+package com.nant.crm.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
