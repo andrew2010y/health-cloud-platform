@@ -24,7 +24,7 @@ public class MemberService {
 		return list;
 	}
 	
-	int save(Member user){
+	public int save(Member user){
 		return userDao.save(user);
 	}
 
@@ -32,11 +32,11 @@ public class MemberService {
 		return userDao.selectById(id);
 	}
 
-	int updateById(Member user){
+	public int updateById(Member user){
 		return userDao.updateById(user);
 	}
 
-	int deleteById(Integer id){
+	public int deleteById(Integer id){
 		return userDao.deleteById(id);
 	}
 }
