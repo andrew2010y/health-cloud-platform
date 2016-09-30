@@ -16,13 +16,12 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 @EnableConfigurationProperties(DataSourceProperties.class)
-//mybaits dao 搜索路径
-@MapperScan("com.nant.crm.demo.service.dao")
+ 
+@MapperScan("com.nant.crm.*.service.dao")
 public class MybatisDataSource {
 	@Autowired
 	private DataSourceProperties dataSourceProperties;
-	//mybaits mapper xml搜索路径
-	private final static String mapperLocations="classpath:com/nant/crm/demo/service/dao/*.xml"; 
+	private final static String mapperLocations="classpath:com/nant/crm/*/service/dao/*.xml"; 
 
 	private org.apache.tomcat.jdbc.pool.DataSource pool;
 	
