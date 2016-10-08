@@ -17,6 +17,7 @@
   
   <modules>
     <module>crm-member</module>
+    <module>health-cloud-upload</module>
   </modules>
   
 <!--   <dependencyManagement>
